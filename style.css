@@ -1,0 +1,86 @@
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-size: 13px;
+    font-family: 'Manrope', sans-serif;
+    background: hsl(210, 46%, 95%);
+    display: grid;
+    height: 100vh;
+    place-items: center center;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1.25fr 2fr;
+    min-width: 450px;
+    width: min(65%, 900px);
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 15px;
+}
+.container__main-image{
+    background: url("images/drawers.jpg");
+    background-size: cover;
+    background-position: left top;
+    border-radius: 15px 0 0 15px;
+    max-height: 450px;
+}
+.container__content{
+    padding: 1rem 2rem;
+}
+.container__title{
+    color: hsl(217, 19%, 35%);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+.container__author{
+    color: hsl(217, 19%, 35%);
+    font-weight: 700;
+}
+.container__date{
+    color: hsl(212, 23%, 69%);
+}
+.container__article{
+    color: hsl(214, 17%, 51%);
+}
+.container__avatar{
+    border-radius: 50%;
+    height: 40px;
+}
+.container__publication-info{
+    padding-left: 1rem;
+}
+.container__btn{
+    border-radius: 50%;
+    padding: .5rem;
+    border: none;
+}
+.container__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+.test{
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width: 720px){
+    .container{
+        grid-template-rows: 1fr 2fr;
+        margin: 2rem;
+        min-width: 300px;
+        grid-column: span 1;
+        grid-template-columns: 1fr;
+    }
+    .container__article{
+        grid-area: content;
+    }
+    .container__main-image{
+        border-radius: 15px 15px 0 0;
+    }
+}
