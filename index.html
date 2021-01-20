@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KBZ5JBTQ');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Article preview component</title>
 </head>
+
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBZ5JBTQ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
   <div class="container">
     <div class="container__main-image"></div>
     <div class="container__content">
       <h1 class="container__title">
-        Shift the overall look and feel by adding these wonderful 
+        Shift the overall look and feel by adding these wonderful
         touches to furniture in your home
       </h1>
       <p class="container__article">
-        Ever been in a room and felt like something was missing? Perhaps 
-        it felt slightly bare and uninviting. I’ve got some simple tips 
+        Ever been in a room and felt like something was missing? Perhaps
+        it felt slightly bare and uninviting. I’ve got some simple tips
         to help you make any room feel complete.
       </p>
       <div class="container__info">
-        <div class="test">
+        <div class="container__box">
           <img src="images/avatar-michelle.jpg" alt="" class="container__avatar">
           <p class="container__publication-info">
             <span class="container__author">Michelle Appleton</span><br>
@@ -31,11 +48,20 @@
           </p>
         </div>
         <button class="container__btn"><img src="images/icon-share.svg" alt="" class="container__btn-image"></button>
+        <div class="container-window">
+          <span class="container-window__share">share</span>
+          <img class="container-window__image" src="images/icon-facebook.svg" alt="">
+          <img class="container-window__image" src="images/icon-twitter.svg" alt="">
+          <img class="container-window__image" src="images/icon-pinterest.svg" alt="">
+        </div>
       </div>
     </div>
-  </div> 
+  </div>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.</div> -->
+  <script src="js/main.js">
+  </script>
 </body>
+
 </html>
